@@ -1,14 +1,7 @@
-<!-- [![Build
-Status](https://travis-ci.org/danielepanozzo/cg.svg?branch=master)](https://travis-ci.org/danielepanozzo/cg)
--->
-<!-- [![Build
-status](https://ci.appveyor.com/api/projects/status/3b1dti4xig8i3c4a?svg=true)](https://ci.appveyor.com/project/danielepanozzo/cg)
--->
-
-# CS-GY 6533 A – Interactive Computer Graphics - Fall 2020
+# CS-GY 6533 A – Interactive Computer Graphics - Fall 2021
 
 ### Course Instructors
-*Cláudio Silva (lead instructor)*
+*Cláudio Silva (instructor)*
 
 370 Jay Street, room 1153 
 
