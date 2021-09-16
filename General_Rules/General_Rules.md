@@ -25,11 +25,11 @@ In order to compile the provided project files for a given assignment on your ma
 
 * Create the necessary makefiles for compilation and place them inside the build directory, using the CMAKE GUI (windows), or the command line equivalent: 
 ```cd build; cmake ../
-'''
+```
 
 * Compile and run the compiled executable by typing:
 ```make; ./AssignmentX
-'''
+```
 
 If you run into problems, please contact us on Discord.
 
@@ -37,7 +37,7 @@ If you run into problems, please contact us on Discord.
 
 The delivery of the exercises is done using github classroom. The repository should follow the template provided, and it must contain:
 
-* The source code, together with the necessary CMAKE project files, but excluding all compiled binaries/libraries. Specifically, do not include the build/ directory. The code must successfully compile on Linux operating system using GCC 9.3.0. Codes that don't successfully compile will receive a grade of 0%.}
+* The source code, together with the necessary CMAKE project files, but excluding all compiled binaries/libraries. Specifically, do not include the build/ directory. The code must successfully compile on Linux operating system using GCC 9.3.0. Codes that don't successfully compile will receive a grade of 0%.
 
 * A README.md file containing a description of what you've implemented and compilation
 instructions, as well as explanations/comments on your results.
