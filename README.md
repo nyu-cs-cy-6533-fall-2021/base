@@ -54,13 +54,13 @@ This course is based on the computer graphics course designed by Professor Danie
 
 * [General Guidelines](General_Rules/General_Rules.md) 
 
-* [Assignment 1: Images, Morphological Operators](Assignment_1/requirements/Assignment-1_Images.pdf) [(latex)](Assignment_1/requirements/Assignment-1_Images.tex)
+* [Assignment 1: Images, Morphological Operators](Assignment_1/requirements/Assignment-1_Images.md) 
 
-* [Assignment 2: 2D Vector Graphics Editor](Assignment_2/requirements/Assignment-2_2D_Editor.pdf) [(latex)](Assignment_2/requirements/Assignment-2_2D_Editor.tex)
+* [Assignment 2: 2D Vector Graphics Editor](Assignment_2/requirements/Assignment-2_2D_Editor.md) 
 
-* [Assignment 3: 3D Scene Editor](Assignment_3/requirements/Assignment3_3D.pdf) [(latex)](Assignment_3/requirements/Assignment3_3D.tex)
+* [Assignment 3: 3D Scene Editor](Assignment_3/requirements/Assignment3_3D.md) 
 
-* [Assignment 4: Shadows, Reflections, and Depth Maps](Assignment_4/requirements/Assignment4.pdf) [(latex)](Assignment_4/requirements/Assignment4.tex)
+* [Assignment 4: Shadows, Reflections, and Depth Maps](Assignment_4/requirements/Assignment4.md) 
 
 # Compilation Instructions
 
