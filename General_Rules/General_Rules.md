@@ -1,8 +1,6 @@
-
 # CS-GY 6533 A – Interactive Computer Graphics - Fall 2021
 
 # General Rules
-
 
 ## Plagiarism note and late submissions
 
@@ -21,7 +19,10 @@ In order to compile the provided project files for a given assignment on your ma
 * Clone the class repo with the --recursive option. NOTE: The recursive option is very important and it will not work without it.
 
 * Create a directory called **build** in the assignment directory **TOPDIR/Assignment_X**, e.g. by typing in a terminal window:
-**cd TOPDIR/Assignment_X; mkdir build**
+
+```bash
+cd TOPDIR/Assignment_X; mkdir build
+```
 
 * Create the necessary makefiles for compilation and place them inside the build directory, using the CMAKE GUI (windows), or the command line equivalent: 
 
