@@ -22,13 +22,14 @@ In order to compile the provided project files for a given assignment on your ma
 
 * Create a directory called **build** in the assignment directory **TOPDIR/Assignment_X**, e.g. by typing in a terminal window:
 **cd TOPDIR/Assignment_X; mkdir build**
-}
 
-* Create the necessary makefiles for compilation and place them inside the build directory, using the CMAKE GUI (windows), or the command line equivalent: ```cd build; cmake ../'''
-}
+* Create the necessary makefiles for compilation and place them inside the build directory, using the CMAKE GUI (windows), or the command line equivalent: 
+```cd build; cmake ../
+'''
 
 * Compile and run the compiled executable by typing:
-```make; ./AssignmentX'''
+```make; ./AssignmentX
+'''
 
 If you run into problems, please contact us on Discord.
 
