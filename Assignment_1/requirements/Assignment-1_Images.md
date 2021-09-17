@@ -164,33 +164,19 @@ Utilizing the previously implemented operators, implement a method to apply gamm
 
 Alpha Compositing is explained in section 3.4 of the textbook. Utilizing the previously implemented operators and equation 3.2 in section 3.4, implement alpha compositing.
 
-\begin{figure}[t]
-  \centering
-  \fbox{\includegraphics[width=0.4\linewidth]{MandrillColorAndTandonColorApha50}}
-%  \vspace*{-5mm}
-  \caption{The result of applying alpha compositing to the Mandrill image (front picture) and the Tandon Color image (back picture) for an alpha value equals to 0.5.}
-  \label{fig:alpha50}
-  \vspace*{-3.5mm}  
-\end{figure}
+![MandrillColorAndTandonColorApha50](figures/MandrillColorAndTandonColorApha50.png)
 
-\begin{figure}[t]
-  \centering
-  \fbox{\includegraphics[width=0.4\linewidth]{MandrillColorAndTandonColorApha85}}
-%  \vspace*{-5mm}
-  \caption{The result of applying alpha compositing to the Mandrill image (front picture) and the Tandon Color image (back picture) for an alpha value equals to 0.85.}
-  \label{fig:alpha85}
-  \vspace*{-3.5mm}  
-\end{figure}
+The result of applying alpha compositing to the Mandrill image (front picture) and the Tandon Color image (back picture) for an alpha value equals to 0.5.
 
-\section*{Optional Tasks.}
-\vspace{-3mm}
-This task is optional and worth 1.5\% of the final grade. 
+![MandrillColorAndTandonColorApha85](figures/MandrillColorAndTandonColorApha85.png)
 
-\subsection{Morphological Operators}
+The result of applying alpha compositing to the Mandrill image (front picture) and the Tandon Color image (back picture) for an alpha value equals to 0.85.
 
-Read about Morphological Operators on Images (\href{https://www.cs.auckland.ac.nz/courses/compsci773s1c/lectures/ImageProcessing-html/topic4.htm}{link1}, \href{https://www.di.univr.it/documenti/OccorrenzaIns/matdid/matdid699113.pdf}{link2}, \href{https://www.researchgate.net/publication/272484795_Morphological_Operations_for_Image_Processing_Understanding_and_its_Applications}{link3}) and implement the dilatation and erosion operations.
-Given an image (\textit{e.g.} \texttt{Mandrill.ppm}), apply the dilatation operation on it and save the result. Using the same original image, apply the erosion operation. Next, you must subtract from the result of the first operation (dilatation) the result of the second operation (erosion). What is the final result? Show it with pictures.
+## Optional Tasks
 
-%\bibliographystyle{plain}
-%\bibliography{bib.bib}
-\end{document}  
+This task is optional and worth 1.5% of the final grade. 
+
+## Morphological Operators
+
+Read about Morphological Operators on Images https://www.cs.auckland.ac.nz/courses/compsci773s1c/lectures/ImageProcessing-html/topic4.htm, https://www.di.univr.it/documenti/OccorrenzaIns/matdid/matdid699113.pdf, https://www.researchgate.net/publication/272484795_Morphological_Operations_for_Image_Processing_Understanding_and_its_Applications and implement the dilatation and erosion operations.
+Given an image, e.g. Mandrill.ppm, apply the dilatation operation on it and save the result. Using the same original image, apply the erosion operation. Next, you must subtract from the result of the first operation (dilatation) the result of the second operation (erosion). What is the final result? Show it with pictures.
