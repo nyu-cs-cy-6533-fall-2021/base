@@ -138,27 +138,14 @@ int main(int argc, char* argv[]) {
 }
 ```
 
-![X](figures/MandrillColorAndTandonColor.png)
+![MandrillColorAndTandonColor](figures/MandrillColorAndTandonColor.png)
+
+The result of adding the Mandrill image and the Tandon Color image together. What is happening with the colors in the resulting image?
 
 
+![MandrillColorAndTandonColor](figures/MandrillColorMinusTandonColor.png)
 
-\begin{figure}[t]
-  \centering
-  \fbox{\includegraphics[width=0.99\linewidth]{MandrillColorAndTandonColor}}
-%  \vspace*{-5mm}
-  \caption{The result of adding the Mandrill image and the Tandon Color image together. What is happening with the colors in the resulting image?}
-  \label{fig:adding}
-  \vspace*{-3.5mm}  
-\end{figure}
-
-\begin{figure}[t]
-  \centering
-  \fbox{\includegraphics[width=0.4\linewidth]{MandrillColorMinusTandonColor}}
-%  \vspace*{-5mm}
-  \caption{The result of subtracting from the Mandrill image, the Tandon Color image.}
-  \label{fig:minus}
-  \vspace*{-3.5mm}  
-\end{figure}
+The result of subtracting from the Mandrill image, the Tandon Color image.
 
 
 
