@@ -1,101 +1,59 @@
-\documentclass[11pt]{article}
-\usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
-\geometry{letterpaper}                   % ... or a4paper or a5paper or ... 
-%\geometry{landscape}                % Activate for for rotated page geometry
-%\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
-\usepackage{graphicx}
-\usepackage{amssymb}
-\usepackage{epstopdf}
-\usepackage[usenames,dvipsnames]{color}
-\usepackage{hyperref}
-\usepackage{url}
-\hypersetup{colorlinks=true}
-%\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
-\renewcommand\familydefault{\sfdefault}
-\newcommand{\todo}[1]{{\bf\textcolor{red}{TODO: #1}}}
-\setlength{\topmargin}{0cm}
-\setlength{\headheight}{0cm}
-\setlength{\headsep}{1cm}
-\setlength{\textheight}{7.7in}
-\setlength{\textwidth}{6.5in}
-\setlength{\oddsidemargin}{0cm}
-\setlength{\evensidemargin}{0cm}
-\setlength{\parindent}{0.25cm}
-\setlength{\parskip}{0.1cm}
+# CS-GY 6533 A – Interactive Computer Graphics - Fall 2021
 
-\usepackage{fancyhdr,graphicx,lastpage}% http://ctan.org/pkg/{fancyhdr,graphicx,lastpage}
-\fancypagestyle{plain}{
-  \fancyhf{}% Clear header/footer
-  \fancyhead[L]{CS-GY 6533 A – Interactive Computer Graphics}% Right header
-  \fancyhead[R]{\includegraphics[height=20pt]{tandon_long_black.png}}% Right header
-  \fancyfoot[L]{Claudio Silva and Jonathas Costa}% Left footer
-  \fancyfoot[R]{\thepage}% Right footer
-}
-\pagestyle{plain}% Set page style to plain.
+# Assignment 1: Images
 
-\graphicspath{{figures/}{figures_lowres/}{pictures/}}
+Handout date: 09/09/2020
 
-\begin{document}
+Submission deadline: 09/23/2020, 11:59PM EST
 
-\hspace{50pt}
-
-\begin{center}
-
-{\Huge \textbf{Assignment 1: Images}}\\
-\vspace{10pt}
-Handout date: 09/09/2020\\
-Submission deadline: 09/23/2020, 11:59PM EST\\
 Demo date: TBA, via Zoom appointments
-\end{center}
-%\vspace{0.5cm}
 
-\noindent This assignment accounts for 15\% of your final grade. 
+This assignment accounts for 15\% of your final grade. 
 
-\section*{Goals}
-\vspace{-3mm}
+## Goals
+
 This assignment aims to get you familiar with C++ and some of the concepts and representation of images in digital form. As part of your work, you will implement a general image class in C++ and apply mathematical operations on  pictures from storage.
 
-\subsection*{Portable PixMap (PPM), Portable GreyMap (PGM), Portable BitMap (PBM) File Formats}
-\vspace{-3mm}
-The image file format you will work with is the Portable PixMap PPM (also known as PGM or PBM) file format. For more information about the file format, see \href{http://paulbourke.net/dataformats/ppm/}{here}, and \href{https://people.cs.clemson.edu/~dhouse/courses/405/notes/ppm-files.pdf}{here}.
+## Portable PixMap (PPM), Portable GreyMap (PGM), Portable BitMap (PBM) File Formats
+
+The image file format you will work with is the Portable PixMap PPM (also known as PGM or PBM) file format. For more information about the file format, see http://paulbourke.net/dataformats/ppm, and https://people.cs.clemson.edu/~dhouse/courses/405/notes/ppm-files.pdf.
 
 In this assignment, you must implement methods to handle PPM files of types: 
-\begin{itemize}
-\item P2 and P5: grayscale images in binary and ASCII representation, respectively
-\item P3 and P6: color images (R, G, B) in binary and ASCII representation, respectively. 
-\end{itemize}
 
-\subsection*{Submission}
-\vspace{-3mm}
-\begin{enumerate}
-\item Follow the link (to be sent by email) to create your repository at \url{https://classroom.github.com/classrooms/70291231-cs-cy-6533-fall-2020-section-01}.
-\item Add a readme in pdf or markdown format as a report of what you did containing a screenshot for each task
-\item Push the code into the repository before deadline and make sure your code builds on Linux OS.
-\end{enumerate}
+* P2 and P5: grayscale images in binary and ASCII representation, respectively
 
-\subsection*{Tasks}
-\vspace{-2mm}
+* P3 and P6: color images (R, G, B) in binary and ASCII representation, respectively. 
+
+## Submission
+
+* Follow the link (to be sent by email) to create your repository at **UPDATE** https://classroom.github.com/classrooms/70291231-cs-cy-6533-fall-2020-section-01
+
+* Add a README.md in markdown format as a report of what you did containing a screenshot for each task
+
+* Push the code into the repository before deadline and make sure your code builds on Linux OS.
+
+## Tasks
+
 We advise all non-private questions be posted on the class Discord channel, as reference for all students.
 For other questions, please email us or join us on the office hours.
-\vspace{-3mm}
 
-\section{Mandatory Tasks}
-\vspace{-4mm}
+## Mandatory Tasks}
+
 For each tasks below, add at least one image in the readme demonstrating the results. Although we provided test images (Mandrill and Tandon), you are encouraged to execute the following items on other images.
 
 The code that you used for all tasks should be provided.
-\vspace{-3mm}
 
-\subsection{Image Class}
-\vspace{-3mm}
+## Image Class
+
 Implement a general image class in C++. Your class must handle PPM files of different types (P2, P3, P5, and P6) and load from and store the picture data on external storage.
 
-You must create a performance-optimized and memory friendly representation for the internal data (the pixels data)\footnote{\textbf{Hint:} Learn about contiguous memory allocation.}.
+You must create a performance-optimized and memory friendly representation for the internal data (the pixels data) 
+
+Hint: Learn about contiguous memory allocation.
 
 Here is an example of how the objects of your class should behave:
 
-\scriptsize
-\begin{verbatim}
+```bash
 #include <iostream>
 #include <exception>
 
@@ -132,8 +90,7 @@ int main(int argc, char* argv[]) {
 
     return 0;
 }
-\end{verbatim}
-\normalsize
+```
 
 A good introduction to C++'s exceptions can be found \href{http://www.cplusplus.com/doc/tutorial/exceptions/}{here}.
 
