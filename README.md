@@ -1,11 +1,12 @@
 # CS-GY 6533 A – Interactive Computer Graphics - Fall 2021
 
 ### Course Instructors
+
 *Cláudio Silva (instructor)*
 
 370 Jay Street, room 1153 
 
-[csilva@nyu.edu](mailto:csilva@nyu.edu)
+<csilva@nyu.edu>
 
 Office hours: Friday, 10a-12pm
 
