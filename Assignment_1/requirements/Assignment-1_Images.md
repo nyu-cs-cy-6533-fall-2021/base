@@ -57,7 +57,7 @@ Hint: Learn about contiguous memory allocation.
 
 Here is an example of how the objects of your class should behave:
 
-```bash
+```cpp
 #include <iostream>
 #include <exception>
 
@@ -109,7 +109,7 @@ Using https://en.cppreference.com/w/cpp/language/operators C++'s operator overlo
 
 Here is an example of how the objects of your class should behavior:
 
-```bash
+```cpp
 #include <iostream>
 #include <exception>
 
