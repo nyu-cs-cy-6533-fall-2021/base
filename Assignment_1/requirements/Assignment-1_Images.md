@@ -2,9 +2,9 @@
 
 # Assignment 1: Images
 
-Handout date: 09/09/2020
+Handout date: 09/10/2021
 
-Submission deadline: 09/23/2020, 11:59PM EST
+Submission deadline: 09/17/2021, 11:59PM EST
 
 Demo date: TBA, via Zoom appointments
 
@@ -30,7 +30,7 @@ In this assignment, you must implement methods to handle PPM files of types:
 
 ## Submission
 
-* Follow the link (to be sent by email) to create your repository at **UPDATE** https://classroom.github.com/classrooms/70291231-cs-cy-6533-fall-2020-section-01
+* Follow the link (to be sent by email) to create your repository at https://classroom.github.com/a/ANXEZNyJ
 
 * Add a README.md in markdown format as a report of what you did containing a screenshot for each task
 
