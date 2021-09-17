@@ -2,9 +2,9 @@
 
 # Assignment 1: Images
 
-Handout date: 09/10/2021
+Handout date: 09/17/2021
 
-Submission deadline: 09/17/2021, 11:59PM EST
+Submission deadline: 09/24/2021, 11:59PM EST
 
 Demo date: TBA, via Zoom appointments
 
