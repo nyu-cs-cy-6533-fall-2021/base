@@ -147,23 +147,20 @@ The result of adding the Mandrill image and the Tandon Color image together. Wha
 
 The result of subtracting from the Mandrill image, the Tandon Color image.
 
-
-
 You must pay attention to the following issues:
-\begin{itemize}
-\item The addition of images can generate results greater than the maximum value of a pixel (in a PPM file, the maximum value is equal to 255). You must allow this behavior for the \texttt{add} operator 
-(operator+). However, when using the addition assignment operator (operator+=), you must average the result of adding the two pixels values.
-\item The subtracting operator can produce pixels with values less than zero (0). You must take care of this issue (hint: \texttt{std::clamp}).
-\item The multiplication of pixels by a scalar can produce overflows and underflows of pixels values.
-\end{itemize}
 
-\subsection{Gamma Correction}
-\vspace{-3mm}
+* The addition of images can generate results greater than the maximum value of a pixel (in a PPM file, the maximum value is equal to 255). You must allow this behavior for the \texttt{add} operator 
+(operator+). However, when using the addition assignment operator (operator+=), you must average the result of adding the two pixels values.
+
+* The subtracting operator can produce pixels with values less than zero (0). You must take care of this issue (hint: \texttt{std::clamp}).
+
+* The multiplication of pixels by a scalar can produce overflows and underflows of pixels values.
+
+## Gamma Correction
 
 Utilizing the previously implemented operators, implement a method to apply gamma correction given a gamma constant value.
 
-\subsection{Alpha Compositing}
-\vspace{-3mm}
+## Alpha Compositing
 
 Alpha Compositing is explained in section 3.4 of the textbook. Utilizing the previously implemented operators and equation 3.2 in section 3.4, implement alpha compositing.
 
