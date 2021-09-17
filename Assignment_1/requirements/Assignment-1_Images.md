@@ -37,7 +37,7 @@ In this assignment, you must implement methods to handle PPM files of types:
 We advise all non-private questions be posted on the class Discord channel, as reference for all students.
 For other questions, please email us or join us on the office hours.
 
-## Mandatory Tasks}
+## Mandatory Tasks
 
 For each tasks below, add at least one image in the readme demonstrating the results. Although we provided test images (Mandrill and Tandon), you are encouraged to execute the following items on other images.
 
@@ -92,22 +92,20 @@ int main(int argc, char* argv[]) {
 }
 ```
 
-A good introduction to C++'s exceptions can be found \href{http://www.cplusplus.com/doc/tutorial/exceptions/}{here}.
+A good introduction to C++'s exceptions can be found here: http://www.cplusplus.com/doc/tutorial/exceptions/.
 
 When projecting your image class remember, you must be able to create empty images or delete (reset) the content of an image.
 
-\subsection{Operations on Images}
-\vspace{-3mm}
-Using \href{https://en.cppreference.com/w/cpp/language/operators}{C++'s operator overloading mechanism}, add the following operations to your image class:
-\begin{itemize}
-\item addition (also addition assignment), subtraction (also subtraction assignment), and multiplication by a scalar value,
-\item array index operator (brackets operator).  
-\end{itemize}
+## Operations on Images
+
+Using https://en.cppreference.com/w/cpp/language/operators C++'s operator overloading mechanism, add the following operations to your image class:
+
+* addition (also addition assignment), subtraction (also subtraction assignment), and multiplication by a scalar value,
+* array index operator (brackets operator).  
 
 Here is an example of how the objects of your class should behavior:
 
-\scriptsize
-\begin{verbatim}
+```bash
 #include <iostream>
 #include <exception>
 
@@ -138,8 +136,7 @@ int main(int argc, char* argv[]) {
 
     return 0;
 }
-\end{verbatim}
-\normalsize
+```
 
 \begin{figure}[t]
   \centering
