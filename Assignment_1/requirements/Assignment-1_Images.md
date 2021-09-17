@@ -138,7 +138,7 @@ int main(int argc, char* argv[]) {
 }
 ```
 
-![X](figures/MandrillColorAndTandonColor)
+![X](figures/MandrillColorAndTandonColor.png)
 
 
 
