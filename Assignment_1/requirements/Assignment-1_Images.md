@@ -138,6 +138,10 @@ int main(int argc, char* argv[]) {
 }
 ```
 
+![X](figures/MandrillColorAndTandonColor)
+
+
+
 \begin{figure}[t]
   \centering
   \fbox{\includegraphics[width=0.99\linewidth]{MandrillColorAndTandonColor}}
@@ -155,6 +159,8 @@ int main(int argc, char* argv[]) {
   \label{fig:minus}
   \vspace*{-3.5mm}  
 \end{figure}
+
+
 
 You must pay attention to the following issues:
 \begin{itemize}
