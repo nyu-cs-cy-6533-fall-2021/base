@@ -178,5 +178,12 @@ This task is optional and worth 1.5% of the final grade.
 
 ## Morphological Operators
 
-Read about Morphological Operators on Images https://www.cs.auckland.ac.nz/courses/compsci773s1c/lectures/ImageProcessing-html/topic4.htm, https://www.di.univr.it/documenti/OccorrenzaIns/matdid/matdid699113.pdf, https://www.researchgate.net/publication/272484795_Morphological_Operations_for_Image_Processing_Understanding_and_its_Applications and implement the dilatation and erosion operations.
-Given an image, e.g. Mandrill.ppm, apply the dilatation operation on it and save the result. Using the same original image, apply the erosion operation. Next, you must subtract from the result of the first operation (dilatation) the result of the second operation (erosion). What is the final result? Show it with pictures.
+Read about Morphological Operators on Images:
+
+*  https://www.cs.auckland.ac.nz/courses/compsci773s1c/lectures/ImageProcessing-html/topic4.htm
+
+*  https://www.di.univr.it/documenti/OccorrenzaIns/matdid/matdid699113.pdf
+
+*  https://www.researchgate.net/publication/272484795_Morphological_Operations_for_Image_Processing_Understanding_and_its_Applications
+
+And implement the dilatation and erosion operations. Given an image, e.g. Mandrill.ppm, apply the dilatation operation on it and save the result. Using the same original image, apply the erosion operation. Next, you must subtract from the result of the first operation (dilatation) the result of the second operation (erosion). What is the final result? Show it with pictures.
