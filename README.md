@@ -66,14 +66,16 @@ This course is based on the computer graphics course designed by Professor Danie
 # Compilation Instructions
 
 ```bash
-git clone --recursive https://github.com/nyu-cs-gy-6533-fall-2020/base # --recursive flag is necessary for dependencies
+git clone --recursive https://github.com/nyu-cs-cy-6533-fall-2021/base # --recursive flag is necessary for dependencies
 cd Assignment_N
 mkdir build
 cd build
 cmake ../ # re-run cmake when you add/delete source files
 make
 ```
+
 You can substitute `cmake ../` with the following to make the program **run faster** (optimized code generation)
+
 ```bash
 cmake -DCMAKE_BUILD_TYPE=Release ../ # use this cmake command instead of the previous linefor faster run
 ```
