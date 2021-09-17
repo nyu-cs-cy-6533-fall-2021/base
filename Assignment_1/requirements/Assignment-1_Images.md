@@ -16,7 +16,11 @@ This assignment aims to get you familiar with C++ and some of the concepts and r
 
 ## Portable PixMap (PPM), Portable GreyMap (PGM), Portable BitMap (PBM) File Formats
 
-The image file format you will work with is the Portable PixMap PPM (also known as PGM or PBM) file format. For more information about the file format, see http://paulbourke.net/dataformats/ppm, and https://people.cs.clemson.edu/~dhouse/courses/405/notes/ppm-files.pdf.
+The image file format you will work with is the Portable PixMap PPM (also known as PGM or PBM) file format. For more information about the file format, see:
+
+* http://paulbourke.net/dataformats/ppm
+
+* https://people.cs.clemson.edu/~dhouse/courses/405/notes/ppm-files.pdf
 
 In this assignment, you must implement methods to handle PPM files of types: 
 
