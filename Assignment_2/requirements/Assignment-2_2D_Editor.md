@@ -60,11 +60,11 @@ Implement an interactive application that allows to add, edit, and delete triang
 
 * The key 'i' will enable triangle insertion mode. When this mode is enabled, every triple of subsequent mouse clicks will create a triangle connecting the three locations where the mouse has been pressed. The first click will create the starting point of the segment, which will be immediately visualized. As the mouse is moved, a preview of a segment will appear. After the second mouse click, a preview of the triangle will appear. After the third click, the current preview will transform into the final triangle. 
 
-\includegraphics[width=1\textwidth]{i.pdf}
+![i](i.png)
 
 * The key 'o' will enable triangle translation mode. Each mouse click will selected the triangle below the cursor (which will be highlighted), and every movement of the mouse (while keeping the button pressed) will result in a corresponding translation of the triangle. Note that the triangle should move on screen by the same amount as the cursor.
 
-\includegraphics[width=1\textwidth]{o.pdf}
+![o](o.png)
 
 * The key 'p' will enable delete mode. When the mouse is pressed, the triangle below the cursor is deleted.
 
@@ -89,7 +89,7 @@ Add to the application the capability of changing the camera. The following acti
 
 This should NOT be implemented by changing the coordinates of the objects in the scene. You must add a view matrix to the vertex shader (as a uniform) that is transforming the position of the vertices of the triangles before they are rendered. Note that you will also have to transform the screen coordinates using the inverse of the view matrix, to ensure that the user interaction will adapt to the current view.
 
-\includegraphics[width=1\textwidth]{view.pdf}
+![view](view.png)
 
 ## Add keyframing
 
