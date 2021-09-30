@@ -1,6 +1,6 @@
 # CS-GY 6533 A – Interactive Computer Graphics - Fall 2021
 
-# Assignment 2: Rasterization
+# Assignment 2: 2D Triangle Editor and Rasterization
 
 Handout date: 09/30/2021
 
