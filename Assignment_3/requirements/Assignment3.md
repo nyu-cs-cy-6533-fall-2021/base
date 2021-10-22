@@ -1,6 +1,6 @@
 # CS-GY 6533 A – Interactive Computer Graphics - Fall 2021
 
-# Assignment 2: 3: 3D Scene Editor
+# Assignment 3: 3D Scene Editor
 
 Handout date: 10/21/2021
 
