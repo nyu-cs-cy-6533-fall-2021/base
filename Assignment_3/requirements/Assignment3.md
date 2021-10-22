@@ -116,6 +116,6 @@ Use a trackball to control the camera. This can be achieved restricting the move
 
 ![trackball](trackball.png)
 
-Ken Joy's lecture on Quartenions is useful to understand the trackbal. The whole video is on the topic, but at the 30 min mark, Prof. Joy discusses implementing a trackball.
+Prof. Ken Joy's lecture on Quartenions is useful to understand the trackbal. Although it is useful to see the complete video, the most relevant part is at around the 30 min mark when Prof. Joy discusses implementing a trackball.
 
 * https://www.youtube.com/watch?v=mHVwd8gYLnI
