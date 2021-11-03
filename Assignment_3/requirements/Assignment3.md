@@ -4,7 +4,7 @@
 
 Handout date: 10/21/2021
 
-Submission deadline: 11/04/2021, 11:59PM EST
+Submission deadline: 11/09/2021, 11:59PM EST
 
 Demo date: TBA, via Zoom appointments
 
