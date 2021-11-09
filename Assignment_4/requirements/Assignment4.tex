@@ -1,0 +1,173 @@
+	\documentclass[11pt]{article}
+\usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   % ... or a4paper or a5paper or ... 
+%\geometry{landscape}                % Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{epstopdf}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{wrapfig}
+\hypersetup{colorlinks=true}
+
+%\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+\renewcommand\familydefault{\sfdefault}
+\newcommand{\todo}[1]{{\bf\textcolor{red}{TODO: #1}}}
+\setlength{\topmargin}{0cm}
+\setlength{\headheight}{0cm}
+\setlength{\headsep}{1cm}
+\setlength{\textheight}{7.7in}
+\setlength{\textwidth}{6.5in}
+\setlength{\oddsidemargin}{0cm}
+\setlength{\evensidemargin}{0cm}
+\setlength{\parindent}{0.25cm}
+\setlength{\parskip}{0.1cm}
+
+\usepackage{fancyhdr,graphicx,lastpage}% http://ctan.org/pkg/{fancyhdr,graphicx,lastpage}
+\fancypagestyle{plain}{
+  \fancyhf{}% Clear header/footer
+  \fancyhead[L]{CS-GY 6533 A – Interactive Computer Graphics}% Right header
+  \fancyhead[R]{\includegraphics[height=20pt]{tandon_long_black.png}}% Right header
+  \fancyfoot[L]{Claudio Silva and Jonathas Costa–—-}% Left footer
+  \fancyfoot[R]{\thepage}% Right footer
+}
+\pagestyle{plain}% Set page style to plain.
+
+\begin{document}
+
+\hspace{50pt}
+
+\begin{center}
+
+{\Huge \textbf{Assignment 4: Environment Mapping and Shadow Mapping}}\\
+\vspace{10pt}
+Handout date: 11/25/2020\\
+Submission deadline: 12/16/2020,  23:59 EST\\
+Demo date: If the TA contact you, you must schedule a zoom meeting with him
+\end{center}
+%\vspace{0.5cm}
+
+\noindent This homework accounts for 30\% of your final grade. 
+
+\section*{Goal of this exercise}
+This homework will improve the 3D scene editor from the previous assignment, adding shadow and reflection effects.
+
+\subsection*{GLM}
+In all exercises, you will need to do operations with vectors and matrices. To simplify the code, you will use \href{https://glm.g-truc.net/0.9.9/index.html}{\texttt{GLM}}. 
+Have a look at the \href{https://github.com/g-truc/glm/blob/master/manual.md#section1}{``Getting Started"} page of \texttt{GLM} as well as the \href{https://github.com/g-truc/glm/blob/master/manual.md#section8}{Code Samples} page to acquaintain yourselves with the basic vector and matrix operations supported. 
+
+\subsection*{OpenGL}
+In all exercises, you will use OpenGL 3.3 with GLSL version 150 or newer versions.
+
+\subsection*{Submission}
+
+%% You must submit a zip file with all your code and libraries (glew, glfw, Eigen or GLM) used in this assignment. The zip file must be submitted using the NYU Classes system as you did for Assignment 1 and 2. 
+
+%% Try to maintain the same directory organization as the starter code, so you don't need to change the \texttt{CMakeLists.txt} file.
+
+\begin{enumerate}
+\item Follow this \href{https://classroom.github.com/a/Tme85rw5}{link} to accept the assignment and create repository.
+\item You must use GLM, GLFW and GLEW libraries. Don't forget to initialize and update the submodules: \texttt{git submodule update --init --recursive}.
+\item Modify the coded provided for Assignment 2 and the code you implemented for Assignment 3 following this assignment instructions.
+\item Add a report in pdf format that contains what you did with a screenshot for each task.
+\item Commit and push the code into the repository before the deadline.
+\end{enumerate}
+
+\textbf{Don't forget about the README file/report.}
+
+\section{Mandatory Tasks}
+For each task below, add at least one image in the readme demonstrating the results. The code that you used for all tasks should be provided.
+
+\subsection{Shadow Mapping}
+
+Starting with the interactive application you have implemented in the previous assignment, add shadows to the scene to increase its realism.
+You will still need to be able to add, select and move, and delete 3D meshes to the scene (they can be added in randomly at any position in the scene; otherwise, the center of the scene).
+
+The scene should always contain one light source (you can add more light sources if you want, but that will require multiple depth maps). The light source should be placed on top of the scene and move around the scene's objects in a circular path (imagine you are in the center of a room, and the light source moves around you at the top of your head).
+
+New objects can be added to the scene in three ways:
+\begin{itemize}
+\item The key '1' will add a unit cube in the origin
+\item The key '2' will import a new copy of the mesh \emph{bumpy\_cube.off}, scale it to fit into a unit cube and center it on the origin
+\item The key '3' will import a new copy the mesh 'bunny.off', scale it to fit into a unit cube and center it on the origin
+\end{itemize}
+
+Note that you can have multiple copies of the same object in the scene, and each copy can have its position, scale, and rotation. All objects (besides the reflective ones) must be shaded using the Phong Shading (per-fragment shading) and Phong's lighting model.
+
+The shadow's color must interchangeably change colors from back to red and vice-versa when the user hits the key 's' (see Figure~\ref{fig:shadow-black} and Figure~\ref{fig:shadow-red}).
+In order to easily visualize the shadows, you must render a plane below the objects in the scene (see Figure~\ref{fig:shadow-black}).
+
+\begin{figure}[tbh]
+  \centering
+  \fbox{\includegraphics[width=0.4\linewidth]{shadow-black}}
+  \caption{The picture shows the mesh objects and plane rendered using per-fragment shading and the shadow mapping algorithm.}
+  \label{fig:shadow-black}
+\end{figure}
+
+\begin{figure}[tbh]
+  \centering
+  \fbox{\includegraphics[width=0.4\linewidth]{shadow-red}}
+  \caption{The picture shows the mesh objects and plane rendered using per-fragment shading and the shadow mapping algorithm. In this version, the shadows are displayed using the red color.}
+  \label{fig:shadow-red}
+\end{figure}
+
+
+Don't forget to consult the class' Textbook and the optional and recommended text. The OpenGL Programming Guide has a full section on shadow mapping. It is explained in detail how to set up the depth buffer for using a shadow mapping algorithm and the matrices transformations needed.
+
+\subsection{Environment Mapping}
+
+In this task, you must implement the environment mapping technique discussed in class.
+Using the cube map textures provided in the data folder into the assignment directory in GitHub, you must create the cube skybox and correctly load the textures in OpenGL (remember the axis directions). 
+
+You can convert the images to an image format you already can handle (PPM)\footnote{You can do it in GIMP} or use any other image library to load the data from the disk. In the case you use an external library, you must provide the code for the library, the changes in the CMake configurations, and be sure it compiles on Linux with no issues.
+
+The easiest way to accomplish this task is to start adding the skybox cube, validating that you correctly loaded the cube map textures, and then write the vertex and fragment shaders to handle the reflection direction calculation and texture sampling.
+
+When an object is selected, it should be possible to translate it, rotate it around its barycenter, and rescale it without changing its barycenter. All these actions should be associated to keyboard keys (and the choice of keys should be detailed in the readme).
+%
+Each object also has a rendering setting associated with it, which can be one of the following two options:
+\begin{enumerate}
+	\item Phong Shading: the normals are specified on the vertices of the mesh and interpolated in the interior. The lighting equation should be evaluated for each fragment.
+	\item Mirror (chrome) appearance: the object is rendered using the environment mapping technique discussed in class. In this item, you don't need to update the cube map texture at each iteration.
+\end{enumerate}
+
+\begin{figure}[tbh]
+  \centering
+  \fbox{\includegraphics[width=0.4\linewidth]{env-mapping}}
+  \caption{Skybox (cube with textures) and reflective objects rendered using the environment mapping technique.}
+  \label{fig:env-mapping}
+\end{figure}
+
+\begin{figure}[tbh]
+  \centering
+  \fbox{\includegraphics[width=0.4\linewidth]{env-mapping2}}
+  \caption{Multiple objects can be rendered as reflective ones.}
+  \label{fig:env-mapping2}
+\end{figure}
+
+\subsection{Camera Control}
+
+Add the possibility to translate the position of the camera (similarly to the previous assignment). The camera should always \emph{point to the origin}. It should be possible to move it around, but the camera should always face the origin.
+
+Implement only the \emph{perspective camera}. The cameras should take into account the size of the window, properly adapting the aspect ratio to not distort the image whenever the window is resized. All functionalities should work after resizing the window, including object selection and editing of the scene.
+
+\section*{Optional Tasks}
+
+These tasks are optional.
+
+%% JCC: New Section
+\subsection{Refraction}
+This talks is optional and worth 1\% of the final grade.\\
+The calculation of the reflection vector can be easily changed to the calculation of the refraction vector. 
+Add to your system the refractive material property for the objects. Once it is implemented, you will be able to render transparent objects.
+
+\subsection{Dynamically Generated Cube Map Textures}
+This talks is optional and worth 3\% of the final grade.\\
+As discussed in class, the cube map textures can be generated on the fly. This technique allows us to render objects with time-dependent reflections, \textit{i.e.}, all objects in the scene will be displayed in the cube map textures. As a result, the reflection color values on a reflective object's surface will change with time. 
+This technique adds a performance hit in the final total rendering time. Why is that?
+
+%\bibliographystyle{plain}
+%\bibliography{bib.bib}
+\end{document}  
