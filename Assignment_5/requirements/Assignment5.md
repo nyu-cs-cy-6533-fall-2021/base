@@ -8,7 +8,7 @@ Submission deadline: 12/11/2021, 11:59PM EST
 
 Demo date: TBA, via Zoom appointments
 
-This assignment accounts for 30% of your final grade. You can win an extra 15% of extra credit on this assignment.
+This assignment accounts for 30% of your final grade. You can win an extra 15% of extra credit on this assignment based on originality and complexity of your project.
 
 ## Goals
 
