@@ -18,7 +18,7 @@ This is the final project of the class. You are free to decide what you want to 
 * Follow this to accept assignment and create repository: 
 
 ```bash
-XXX
+https://classroom.github.com/a/KbJvhM8u
 ```
 
 * Add a report in markdown format 
