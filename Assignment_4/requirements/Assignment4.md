@@ -2,7 +2,7 @@
 
 # Assignment 4: Environment Mapping and Shadow Mapping
 
-Handout date: 11/09/2021
+Handout date: 11/10/2021
 
 Submission deadline: 11/30/2021, 11:59PM EST
 
@@ -37,7 +37,7 @@ Try to maintain the same directory organization as the starter code, so you don'
 * Follow this to accept assignment and create repository: 
 
 ```bash
-TO BE UPDATED
+https://classroom.github.com/a/BAGWJR7K
 ```
 
 * You MUST use the source code provided for Assignment 2 and the code you implemented for Assignment 3 following this assignment instructions. Don't forget to initialize and update the submodules: 
@@ -84,7 +84,7 @@ The shadow's color must interchangeably change colors from back to red and vice-
 |:--:|
 | <b>The picture shows the mesh objects and plane rendered using per-fragment shading and the shadow mapping algorithm. In this version, the shadows are displayed using the red color.</b> |
 
-Don't forget to consult the class' Textbook and the optional and recommended text. The OpenGL Programming Guide has a full section on shadow mapping. It is explained in detail how to set up the depth buffer for using a shadow mapping algorithm and the matrices transformations needed.
+Don't forget to consult the class textbook and the optional and recommended text. The OpenGL Programming Guide has a full section on shadow mapping. It is explained in detail how to set up the depth buffer for using a shadow mapping algorithm and the matrices transformations needed.
 
 ## Environment Mapping
 
