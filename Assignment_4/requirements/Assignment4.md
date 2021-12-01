@@ -14,18 +14,6 @@ This assignment accounts for 30% of your final grade.
 
 This homework will improve the 3D scene editor from the previous assignment, adding shadow and reflection effects.
 
-## GLM
-
-In all exercises you will need to do operations with vectors and matrices. To simplify the code, you will use GLM:
-
-* https://glm.g-truc.net/0.9.9/index.html
-
-Have a look at the Getting Started page of GLM as well as the Code Samples page to acquaintain yourselves with the basic vector and matrix operations supported:
-
-* https://github.com/g-truc/glm/blob/master/manual.md#section1
-
-* https://github.com/g-truc/glm/blob/master/manual.md#section8
-
 ## OpenGL
 
 In all exercises you will use OpenGL 3.3 with GLSL version 150 (You can use a newer version if you want).
@@ -75,14 +63,11 @@ Note that you can have multiple copies of the same object in the scene, and each
 
 The shadow's color must interchangeably change colors from back to red and vice-versa when the user hits the key 's' (see figures below).  In order to easily visualize the shadows, you must render a plane below the objects in the scene (see figure below).
 
-| ![shadow-black](shadow-black.png) |
-|:--:|
-| <b>The picture shows the mesh objects and plane rendered using per-fragment shading and the shadow mapping algorithm.</b> |
+![image](https://user-images.githubusercontent.com/47125385/144151238-e38ace39-f3ea-4982-9210-01b816935439.png)
 
 
-| ![shadow-red](shadow-red.png) |
-|:--:|
-| <b>The picture shows the mesh objects and plane rendered using per-fragment shading and the shadow mapping algorithm. In this version, the shadows are displayed using the red color.</b> |
+![image](https://user-images.githubusercontent.com/47125385/144151182-0765326c-f6e2-4422-8850-286c77a204f0.png)
+
 
 Don't forget to consult the class textbook and the optional and recommended text. The OpenGL Programming Guide has a full section on shadow mapping. It is explained in detail how to set up the depth buffer for using a shadow mapping algorithm and the matrices transformations needed.
 
@@ -107,11 +92,7 @@ Each object also has a rendering setting associated with it, which can be one of
 | ![env-mapping](env-mapping.png) |
 |:--:|
 | <b>Skybox (cube with textures) and reflective objects rendered using the environment mapping technique.</b> |
-
-
-| ![env-mapping2](env-mapping2.png) |
-|:--:|
-| <b>Multiple objects can be rendered as reflective ones.</b> |
+![image](https://user-images.githubusercontent.com/47125385/144151302-beb61b31-15ef-4fdf-aef1-20b0744168f3.png)
 
 ## Camera Control
 
@@ -119,7 +100,12 @@ Add the possibility to translate the position of the camera (similarly to the pr
 
 Implement only the perspective camera. The cameras should take into account the size of the window, properly adapting the aspect ratio to not distort the image whenever the window is resized. All functionalities should work after resizing the window, including object selection and editing of the scene.
 
+https://user-images.githubusercontent.com/47125385/144151446-38b19eda-ae36-4ca1-930e-b166603b0a95.mp4
+
 ## Optional Tasks
+
+
+
 
 These tasks are optional.
 
